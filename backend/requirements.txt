@@ -1,0 +1,11 @@
+# Python dependencies for the Lost & Found project backend
+# Includes Flask API, database ORM, QR code generation, email notifications, and more
+Flask
+requests-oauthlib
+SQLAlchemy
+python-dotenv
+gunicorn
+flask-cors 
+flask-SQLAlchemy
+qrcode[pil]
+marshmallow

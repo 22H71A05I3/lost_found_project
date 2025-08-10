@@ -1,0 +1,38 @@
+<!-- HTML email template for notification emails sent to users -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Notification</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; }
+    .container { background: #fff; padding: 24px; border-radius: 8px; max-width: 500px; margin: auto; }
+    .logo { display: block; margin: 0 auto 20px auto; max-width: 120px; }
+    .title { font-size: 24px; font-weight: bold; margin-bottom: 16px; color: #0055aa; }
+    .message { font-size: 18px; margin-bottom: 20px; color: #222; }
+    .timestamp { font-size: 14px; color: #888; }
+    .action-btn {
+      display: inline-block;
+      padding: 10px 24px;
+      background: #0055aa;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 16px;
+      margin-top: 16px;
+    }
+    .action-btn:hover {
+      background: #003366;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="{{ logo_url }}" alt="Logo" class="logo" />
+    <div class="title">{{ title }}</div>
+    <div class="message">{{ message }}</div>
+    <a href="{{ action_url }}" class="action-btn">View Details</a>
+    <div class="timestamp">{{ timestamp }}</div>
+  </div>
+</body>
+</html>
